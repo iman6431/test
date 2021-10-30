@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/galaxy.jpg);
+	
+}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: #efb106;
+}
+
+h1,h3,legend{
+/* font-family: 'Dancing Script', cursive; */
+font-family: 'Homemade Apple', cursive;
+}
+section {
+	flex-basis: 57%;
+	margin-right: 10%;
+	/* border: 1px red solid; */
+	
+}
+aside {
+	flex-basis: 33%;
+	/* border: 1px solid green; */
+}
+
+p,[for="abtype"]{/*the for abtype gives space between the radio button and the label below it*/
+	margin-bottom: 0;
+	margin-top: 2rem;
+}
+
+fieldset{
+	border:  1px solid black;	
+	border-radius: 10px;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+	
+}
+
+legend{
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	
+	
+}
+
+label{ /*you can either put label or input as a block and samething will apply*/
+	
+	display: block;
+	margin-bottom: 0.5rem;
+	
+}
+
+textarea{
+	height: 10rem;
+	padding: 1rem;
+}
+
+select{
+	font-size: 1rem;
+	margin-top:0.5rem;
+	
+}
+
+button{
+	font-size: 1rem;
+	margin: 2rem 0;
+	background-color: #bb342f;
+	color: #fff;
+	border:none;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),textarea,select{/*this is attribute selectore. this will exclude the radio button from apply these values*/
+	display: block;/*changing to block will help you give space between inputs and the maregin will work properly*/
+	margin-bottom: 2rem;
+	width: 20rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	padding: 0 1rem;
+	border-radius: 10px;
+	border:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
